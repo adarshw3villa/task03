@@ -1,0 +1,106 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-wrapper{
+    max-width: 1440px;
+  }
+  
+  .card {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: wheat;
+    padding: 3em;
+    width: 100%;
+    display: flex;
+    gap: 4em;
+  }
+  
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    line-height: 1;
+  }
+  
+  .card-description {
+    color: #555;
+    font-size: 1em;
+  }
+  
+  .countdown {
+
+    margin-top: 2em;
+    display: flex;
+    gap: 2em;
+  }
+  
+  .countdown-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 70px;
+  }
+  
+  .countdown-field span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .countdown-field label {
+    font-size: 0.8em;
+    margin-top: 4px;
+  }
+  
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+
+    .card{
+        flex-direction: column;
+    }
+
+    .card-image {
+      width: 100%; 
+    }
+
+    .countdown {
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    
+      .countdown-field {
+        margin-bottom: 8px;
+        width: 100px;
+      }
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+  p{
+    text-align: justify;
+  }
